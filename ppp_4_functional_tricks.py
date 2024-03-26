@@ -20,6 +20,11 @@ even_or_odd_lst = [even_or_odd(e) for e in [3,6,9,2]]
 print(even_or_odd_lst)
 
 # Use a list comprehension to create a list of the numbers from 1 to 100 (including 100).
+list100 = {num for num in range(1,101)}
+print(list100)
+
+# Use a dictionary comprehension to count the length of each word in a sentence.
+# Input: "The quick brown fox jumped over the fence." otuput: {'The': 3, 'quick': 5, 'brown': 5, 'fox': 3, 'jumped': 6, 'over': 4, 'the': 3, 'fence.': 6}
 
 word_length = {word: len(word) for word in "The quick brown fox jumped over the fence.".split(' ')}
 print(word_length)
